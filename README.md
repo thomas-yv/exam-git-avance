@@ -1,5 +1,3 @@
-# exam-git-avance
-
 # Campus Library — Examen Git
 
 Ce repository contient plusieurs branches avec du code pré-écrit.
