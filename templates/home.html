@@ -1,19 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-    <title>Accueil - Campus Library</title>
-</head>
-<body>
-    <h1>Liste des livres</h1>
-    
-    {{range .}}
+    <head>
+        <link rel="stylesheet" href="/static/styles.css" />
+        <title>Accueil - Campus Library</title>
+    </head>
+    <body>
+        <h1>Liste des livres</h1>
+
+        {{range .}}
         <div>
-            <strong>{{.Title}}</strong><br>
-            Auteur : {{.Author}}<br>
-            Année : {{.Year}}<br>
+            <strong>{{.Title}}</strong><br />
+            Auteur : {{.Author}}<br />
+            Année : {{.Year}}<br />
             <a href="/book?id={{.ID}}">Voir le livre</a>
         </div>
-        <hr>
-    {{end}}
-</body>
+        <hr />
+        {{end}}
+    </body>
 </html>
